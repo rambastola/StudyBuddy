@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>StudyBuddy SignUp Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript">
+addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+</script>
+<!-- Custom Theme files -->
+<link href="{{ url_for('static',filename='styles/signup.css') }}" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- //web font -->
+</head>
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>StudyBuddy</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+        <table class="table table-hover table-dark">
+          <h1 style = "color: white; padding-bottom: 30px;"> <mark>Available Buddies</mark> </h1>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td> Event 1</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Event 2</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Event 3</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style= "text-align: center; padding-top: 30px;"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">+ Add Event</button></div>
+        <p><a><button onclick="window.location.href='login.html'" type="button" class="btn btn-danger" style="text-align: center; margin-top: 30px;">Sign Out</button></a></p>
+      </div>
+		</div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Create a New Event</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Event Name</label>
+                    <input type="name" class="form-control" id="eventname" placeholder="For ex: science project...">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">How Many Can Join?</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+
+</body>
+</html>
